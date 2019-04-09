@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.MyLinkDao">
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.MyLink">
+        <result column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="link" property="link" />
+        <result column="status" property="status" />
+    </resultMap>
+    <select id="getMyLinkById" resultMap="BaseResultMap">
+      SELECT u.id, u.name, u.link FROM mylink u where id=#{id}
+   </select>
+
+
+</mapper>
