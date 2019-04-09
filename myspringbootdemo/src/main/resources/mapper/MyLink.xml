@@ -9,7 +9,7 @@
         <result column="status" property="status" />
     </resultMap>
     <select id="getMyLinkById" resultMap="BaseResultMap">
-      SELECT u.id, u.name, u.link FROM mylink u where id=#{id}
+      SELECT u.id, u.name, u.link FROM mylink u where u.id=#{id}
    </select>
 
 
