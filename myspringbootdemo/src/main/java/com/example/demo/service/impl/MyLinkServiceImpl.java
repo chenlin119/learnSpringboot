@@ -1,6 +1,6 @@
 package com.example.demo.service.impl;
 
-import com.example.demo.dao.MyLinkDao;
+import com.example.demo.dao.cluster.MyLinkDao;
 import com.example.demo.domain.MyLink;
 import com.example.demo.service.MyLinkService;
 import org.springframework.beans.factory.annotation.Autowired;

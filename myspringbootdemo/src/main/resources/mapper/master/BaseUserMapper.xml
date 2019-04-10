@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.master.BaseUserDao">
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.BaseUser">
+        <result column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="age" property="age" />
+        <result column="phone" property="phone" />
+        <result column="status" property="status" />
+    </resultMap>
+    <select id="getUserById" resultMap="BaseResultMap">
+      SELECT u.id, u.username, u.age FROM base_user u where u.id=#{id}
+   </select>
+
+
+</mapper>
