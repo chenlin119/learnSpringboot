@@ -1,6 +1,8 @@
 package com.example.demo.domain;
 
-public class BaseUser {
+import java.io.Serializable;
+
+public class BaseUser implements Serializable {
     private int id;
     private String username;
     private int age;
