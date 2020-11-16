@@ -32,7 +32,7 @@ public class BaseUserServiceImpl implements BaseUserService {
         if (hasKey) {
             BaseUser user = operations.get(key);
 
-            LOGGER.info("BaseUserServiceImpl.findCityById() : 从缓存中获取了城市 >> " + user.toString());
+            LOGGER.info("BaseUserServiceImpl.findCityById() : d从缓存中获取了城市 >> " + user.toString());
             return user;
         }
 
